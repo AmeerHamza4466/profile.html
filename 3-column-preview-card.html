@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boby{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .block{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 6rem auto;
+            border-radius: 15px;
+            overflow: auto;
+        }
+        .box1{
+            background-color:  hsl(31, 77%, 52%);
+            padding: 40px;
+            height: 350px;
+        }
+        .box2{
+            background-color: hsl(184, 100%, 22%);
+            padding: 40px;
+            height: 350px;
+        }
+        .box3{
+            background-color: hsl(179, 100%, 13%);
+            padding: 40px;
+            height: 350px;
+        }
+        h1{
+            font-size: 30px;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 1.5;
+            color: aliceblue;
+            padding-bottom: 30px;
+        }
+
+        button{
+           padding: 13px 28px; 
+           border-radius: 26px;
+           border: none;
+           margin-top: 60px;
+            display: inline-block;
+
+        }
+        .box1 button{
+            margin-top: 30px;
+            color: hsl(31, 77%, 52%);
+           
+
+        }
+        .box2 button{
+            color: hsl(31, 77%, 52%);
+            margin-top: 30px;
+           
+
+        }
+        .box3 button{
+            color: hsl(31, 77%, 52%);
+            margin-top: 30px;
+            
+
+        }
+        .box1 button:hover{
+            color: white;
+            border:2px solid white;
+            background-color:  hsl(31, 77%, 52%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .box2 button:hover{
+            color: white;
+            border:2px solid white;
+            background-color:  hsl(184, 100%, 22%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .box3 button:hover{
+            color: white;
+            border:2px solid white;
+            background-color:  hsl(179, 100%, 13%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        @media(max-width:768px){
+            .block{
+                padding: 10px 200px;
+                grid-template-columns: 1fr;
+                margin: 5rem;
+            }
+
+        }
+        
+           
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div class="box1">
+                <img src="3-column-preview-card-component-main/3-column-preview-card-component-main/images/icon-sedans.svg" alt="sedans ">
+                <h1>SEDANS</h1>
+                <p>
+                    choose a sedan for its affordablility and excellent fuel economy. Ideal for cruising in the city or an your next orad trip.
+                </p>
+                <button>
+                    Learn More
+                </button>
+            </div>
+            <div class="box2">
+                <img src="3-column-preview-card-component-main/3-column-preview-card-component-main/images/icon-suvs.svg" alt="SUVS icon">
+                <h1>SUVS</h1>
+                <p>Take a SUV for its spacious interior,power, and visibility. Perfect for your next family vacation and off-roads adventures.</p>
+                <button>Learn More</button>
+
+            </div>
+            <div class="box3">
+                <img src="3-column-preview-card-component-main/3-column-preview-card-component-main/images/icon-luxury.svg" alt="Luxury icon">
+            <h1>LUXURY</h1>
+            <p>Cruise in the best car brands without the bloated prices.Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+            <button>Learn More</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
